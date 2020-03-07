@@ -14,7 +14,7 @@ runs:
   using: "docker"
   image: "Dockerfile"
   args:
-    - ${{e inputs.message }}
+    - ${{ inputs.message }}
 
 branding:
   icon: "message-circle"
