@@ -9,8 +9,6 @@ jobs:
       id: hello
       uses: alphaolomi/hello-world-docker-action@v1.0.0
       with:
-        who-to-greet: 'Mona the Octocat'
         message: 'Hellowwww'
-    # Use the output from the `hello` step
     - name: Get the output time
-      run: echo "${{ steps.hello.outputs.message }}"
+      run: echo "${{ steps.hello.outputs.msg }}"
