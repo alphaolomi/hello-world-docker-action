@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: alphaolomi/hello-world-docker-action@v1.0.0-a
+      uses: alphaolomi/hello-world-docker-action@v1.0.0-b
       with:
         message: 'Hellowwww'
     - name: Get the output time
