@@ -1,26 +1,21 @@
 # action.yml
-name: 'Cowsay Message'
-description: 'Greet someone and print Cowsay message'
-author: 'Alpha Olomi'
+name: "Cowsay Message"
+description: "Greet someone and print Cowsay message"
+author: "Alpha Olomi"
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
   message:
-    description: 'Custom Message'
+    description: "Custom Message"
     required: false
-    default: 'Hello World'
+    default: "Hello World"
 outputs:
-  msg: # id of output
-    description: 'The cowsay meesage'
+  msg:
+    description: "The cowsay meesage"
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "docker"
+  image: "Dockerfile"
   args:
-    - ${{e inputs.who-to-greet }}
     - ${{e inputs.message }}
 
 branding:
-  icon: 'message-circle'
-  color: 'green'
+  icon: "message-circle"
+  color: "green"
