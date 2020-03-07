@@ -7,10 +7,8 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: alphaolomi/hello-world-docker-action@v1.0.0
+      uses: alphaolomi/hello-world-docker-action@v1.0.0-a
       with:
-        who-to-greet: 'Mona the Octocat'
         message: 'Hellowwww'
-    # Use the output from the `hello` step
     - name: Get the output time
-      run: echo "${{ steps.hello.outputs.message }}"
+      run: echo "${{ steps.hello.outputs.msg }}"
